@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
      
-  home comming
-   
+ 
+ home comming
     </div>
     
   );
