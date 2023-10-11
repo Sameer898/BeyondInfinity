@@ -9,7 +9,7 @@ function App() {
     <div>
      
  
- home comming
+ comming home
     </div>
     
   );
