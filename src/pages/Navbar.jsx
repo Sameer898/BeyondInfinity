@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 export const Navbar = () => {
+    const navigate=useNavigate();
   return (
     <div className="text-[white] border-[1px] w-[100%] h-[100px] mt-[-20px] bg-[#010B13] font-[1.5rem] flex flex-between">
     
@@ -9,14 +10,15 @@ export const Navbar = () => {
        
     </div>
 
+
     <div className="flex mt-[50px] gap-[50px] ml-[200px] ">
         <div>Home</div>
         <div>About</div>
         <div>Profile</div>
         <div className="ml-[600px] gap-[10px] ">
-        <button className="mr-[10px] ">Login</button>
+        <button onClick={()=>navigate("/")} className="mr-[10px] ">Log out</button>
         
-        <button>Sign Up</button>
+        <button onClick={()=>navigate("/signup")}>Sign Up</button>
 
         </div>
       
