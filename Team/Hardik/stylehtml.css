@@ -1,0 +1,70 @@
+.body{
+    background-color:#3056D3 ;
+    background-image: url(img/img2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div1{
+   
+    /* background-repeat: no-repeat; */
+
+   display: flex;
+   justify-content:center;
+    /* background-color: rgb(74, 74, 243); */
+    gap: 30px;
+    width: 1000px;
+    height: 315px;
+    margin-left: 450px;
+    
+}
+img{
+ width: 250px; 
+ height: 250px;  
+ /* background-color:#3056D3; */
+ text-align: center;
+ margin-top: 200px;
+}
+.div2{
+    padding: 20px;
+     text-align: center;
+     border-radius: 15px ;
+     background: hsla(239, 100%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+
+  
+     
+} 
+.div5{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+.div3{
+    text-align: center;
+    /* display: flex;
+    gap: 10px; */
+    margin-left: 20px;
+    
+}
+.hover:hover{
+    background-color: rgba(113, 113, 243, 0.705);
+}
+.hover{
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+.input{
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+}
