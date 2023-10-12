@@ -8,15 +8,14 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: #3053D3;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-
 .container{
     font-family:Poppins;
     font-size: 2rem;
     background-color:whitesmoke;
     text-align: left;
-    height: 250px;
+    height: 350px;
     width: 500px;
     transform: translate(40vw,20vh);
     border-radius: 20px;
@@ -38,7 +37,7 @@ body{
     font-weight: bold;
 }
 #OTP{
-    height: 20px;
+    height: 40px;
     width: 350px;
     border-radius: 10px;
 }
