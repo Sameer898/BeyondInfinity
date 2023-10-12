@@ -10,6 +10,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-right: 50px;
 }
 ul>li{
     margin-top: 25px;
@@ -23,13 +24,14 @@ ul>li{
     width: 50px;
     border-radius: 5px;
     position: fixed;
-    margin-top: 0;
+    margin-top: 12px;
 }
  
 a{
     color: black;
     border-radius: 10px;
     text-decoration: none;
+
 }
 .nav-elements{
     color: aliceblue;
