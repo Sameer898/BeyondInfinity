@@ -1,4 +1,4 @@
-.body{
+.b{
     background-color:#3056D3 ;
     background-image: url(img/img2.avif);
     background-repeat: no-repeat;
@@ -60,4 +60,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", en
     border-radius: 5px;
     width: 200px;
     height: 25px;
+}
+.form{
+    margin: 20px 30px 300px 450px  ;
 }
