@@ -1,6 +1,8 @@
 import React from 'react'
 import './Login.css'
+import { useNavigate } from 'react-router-dom'
 export const Login  = () => {
+    const navigate=useNavigate();
   return (
     <div className="body">
     
@@ -19,11 +21,11 @@ export const Login  = () => {
             <br/>
             <div className="div3">
                 <div>
-                    <input className="hover"  type="submit" value="Login"/>
+                    <input className="hover" onClick={()=>navigate('/myprofile')}   value="Login"/>
                 </div>
                 <br/>
                 <div>
-                    <input className="hover" type="submit" value="Signup"/>
+                    <input className="hover" onClick={()=>navigate("/signup")} value="Signup"/>
                 </div>
             </div>
             <br/>

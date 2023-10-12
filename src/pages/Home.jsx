@@ -137,7 +137,7 @@ export const Home = () => {
               <ul className="mb-10 flex flex-wrap items-center justify-center">
                 <li>
                   <a
-                    href="https://links.tailgrids.com/play-download"
+                    href="/login"
                     className="inline-flex items-center justify-center rounded-lg bg-white py-4 px-6 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:text-primary hover:shadow-lg sm:px-10"
                   >
                     Login
@@ -145,7 +145,7 @@ export const Home = () => {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/tailgrids/play-tailwind"
+                    href="/signup"
                     target="_blank"
                     className="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
                   >
@@ -1403,7 +1403,7 @@ export const Home = () => {
               Clients or patients needing blood for transfusion may request from our website
               </p>
               <a
-                href="javascript:void(0)"
+                href="/signup"
                 className="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
@@ -1443,7 +1443,7 @@ export const Home = () => {
               Transportation is fast-moving within the current era.
               </p>
               <a
-                href="javascript:void(0)"
+                href="/signup"
                 className="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
@@ -1491,7 +1491,7 @@ export const Home = () => {
                 We provide high quality cook to each user without any discrimination.
               </p>
               <a
-                href="javascript:void(0)"
+                href="/signup"
                 className="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
@@ -1530,7 +1530,7 @@ export const Home = () => {
                 The home health care services to senior citizen.
               </p>
               <a
-                href="javascript:void(0)"
+                href="/signup"
                 className="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
@@ -1576,7 +1576,7 @@ Our website provides services and facilities including cooking, transportation, 
                  
                   </p>
                   <a
-                    href="javascript:void(0)"
+                    href="/signup"
                     className="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
                   >
                     Learn More
