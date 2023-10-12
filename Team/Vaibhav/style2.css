@@ -31,3 +31,9 @@ body{
     border-radius: 8px;
     box-shadow: 2px 2px 7px black;
 }
+
+button {
+   transform: translateY(178%);
+   display: inline;
+   justify-content: space-between;
+}
