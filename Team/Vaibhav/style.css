@@ -1,0 +1,14 @@
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+.container .input{
+    display: flex;
+    justify-content: flex-end;
+}
