@@ -8,6 +8,7 @@ import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import { VerifyEmail } from './pages/VerifyEmail';
 import { MyProfile } from './pages/MyProfile';
+import { SearchPage } from './pages/SearchPage';
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/verifyEmail" element={<VerifyEmail/>}/>
        <Route path="/myprofile" element={<MyProfile/>}/>
+       <Route path="/search" element={<SearchPage/>}/>
       </Routes>
     </div>
 

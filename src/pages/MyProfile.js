@@ -30,7 +30,7 @@ const navigate=useNavigate();
         <div className="w-[194px] text-center top-[94px] ml-[45px] ">--------------------</div>
         <div className=' '><Link to="/authentication">Authentication</Link></div>
         <div className="w-[194px] text-center mt-[200px] ml-[45px] text-center ">--------------------</div>
-       <div className="">Setting</div>
+       <Link to="/setting" className="">Setting</Link>
     </div>
 
     <div className="w-[1164px] h-[860px] top-[78px] left-[282px] bg-[#010B13]  gap-[10px] flex flex-col">
