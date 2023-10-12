@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Navbar } from './Navbar'
 
 export const MyProfile = () => {
@@ -13,10 +13,11 @@ export const MyProfile = () => {
        }
        ,{
         name:"Aadhar Card",
-        surname:"5467 7283 9687"
+        surname:""
        }
 
 ]
+const navigate=useNavigate();
   return (
     <div>
     <Navbar/>
@@ -43,19 +44,22 @@ export const MyProfile = () => {
         <div className="ml-[30px] w-[300px] h-[29px] top-[243px] left-[476px] font-inter font-[400px] text-[24px] leading-[29px] text-[#808080]">beyondInfinity@gmail.com</div>
         </div>
         </div>
-        <div className="ml-[30px] w-[794px] h-[399px] top-[309px] left-[359px] border-[1px] bg-[#010B13] text-white">
+        <div className="ml-[30px] gap-[20px] w-[794px] h-[399px] top-[309px] left-[359px] border-[1px] bg-[#010B13] text-white">
 
 {
     linkData.map((data,index)=>{
         return(
-            <div className="w-[793px] h-[88px] top-[310px] left-[360px] flex">
+            <div className="w-[793px] h-[88px] top-[310px] left-[360px] flex justify-between">
                 
-                <div className="">
-                    <div className="w-[67px] h-[29px] top-[321px] left-[403px] font-inter font-[400px] text-[24px] leading-[29px] text-white">{data.name}</div>
-                    <div className='w-[152px] h-[29px] top-[354px] left-[400px] font-inter font-[400px] text-[24px] leading-[29px] text-[#808080]'>{data.surname}</div>
+                <div className=" ">
+                    <div className="ml-[30px] w-[100px] h-[29px] top-[321px] left-[403px] font-inter font-[400px] text-[24px] leading-[29px] text-white">{data.name}</div>
+
+                    <div className='ml-[30px] w-[152px] h-[29px] top-[354px] left-[400px] font-inter font-[400px] text-[24px] leading-[29px] text-[#808080]'>{data.surname}</div>
                 </div>
-                <div>
-                    
+                <div className="flex gap-[10px] mt-[10px]">
+                    <button onClick={()=>navigate('/setting')} className="w-[106px] h-[36px] top-[332px] text-black left-[840px] bg-[#50C878]">Edit</button>
+                    <br></br>
+                    <button onClick={()=>navigate('/setting')} className="w-[106px] h-[36px] top-[332px] text-black left-[969px] bg-[#50C878]">Cancel</button>
                 </div>
             </div>  
         );
