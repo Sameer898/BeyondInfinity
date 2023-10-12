@@ -1,0 +1,27 @@
+.nav-bar{
+    margin-top: -20px;
+    height: 80px;
+    width: 100%;
+    background-color:rgb(73,172, 172);
+    font-size: 1.5rem;
+}
+.nav-bar ul {
+    margin-left: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+ul>li{
+    margin-top: 30px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    position: fixed;
+    margin-top: 0;
+}
