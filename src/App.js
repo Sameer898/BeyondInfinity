@@ -4260,7 +4260,7 @@ Our website provides services and facilities including cooking, transportation, 
                     target="_blank"
                     className="text-primary hover:underline"
                   >
-                    TailGrids and UIdeck
+                   Beyond Infinity
                   </a>
                 </p>
               </div>
