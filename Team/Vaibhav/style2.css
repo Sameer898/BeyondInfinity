@@ -8,17 +8,40 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
     font-size: 2rem;
 }
+.logo img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-left: 0;
+}
 .container{
     display: block;
-    text-align: center;
+    height: 200px;
+    width: 300px;
     margin-top: 20%;
-}
-.s{
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 5px;
+    background-color: white;
     
 }
-.btns button{
+.container .s {
+    font-size: 2rem;
+    background-color: rgb(73, 172, 172);
+}
+.container .sub{
+    font-size: 1rem;
+    transform: translateY(150%);
+}
+button{
     font-size:1.5rem;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 2px 2px 7px black;
+    transform: translateY(178%);
+    display: inline;
+    justify-content: space-between;
+}
+.btns button:hover{
+    background-color: black;
+    color: white;
 }
