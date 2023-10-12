@@ -7,10 +7,10 @@ export const Login  = () => {
     
     <div className="div1" >
         <div>
-        <img src="./img/logo.png" alt="logo"/>
+        <img src="./img/logo.png"   alt="logo"/>
         </div>
         <br/>
-        <div  className="div2">
+        <div  className="div2 ">
             <h1 className="h1">Login</h1>
             <p><input className="input" type="text" name="name" placeholder="Email" required/></p>
             <p><input className="input" type="password" name="name" placeholder="password" required/></p>
