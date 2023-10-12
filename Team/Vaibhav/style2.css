@@ -6,13 +6,17 @@ body{
     background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+    font-size: 2rem;
 }
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+    margin-top: 20%;
+    
 }
-.s {
-
+.btns button{
+    font-size:1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px black;
 }
