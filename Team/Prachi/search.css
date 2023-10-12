@@ -1,52 +1,23 @@
-
-
 .menu-container {
     width: 200px;
-    background-color:aliceblue;;
+    background-color: #f4f4f4;
     height: 100%;
     position: fixed;
 }
 
 /* Style the menu items */
 .menu-item {
-    padding: 30px;
+    padding:30px;
     text-decoration: none;
     display: block;
-    color: black;
-    border: 5px;
-
+    color: #333;
 }
 
 /* Change background color on hover */
 .menu-item:hover {
     background-color: #ddd;
 }
-.inner{
-    display: flex;
-}
-img{
-    width: 80px;
-    height: 75px;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-.h4{
-    width: 157px;
-    height: 29px;
-    margin-top: 21px;
-    margin-left:40px;
-    color: black;
-    font-size: 250%;
 
-}
-.h6{
-    width: 300px;
-    height: 29px;
-    margin-top: 0px;
-    margin-left: 40px;
-    color:black;
-    font-size: 150%;
-}
 .box {
     border: 1px solid #000;
     padding: 20px;
@@ -68,6 +39,9 @@ img{
 #cancelButton{
     display: flex;
 }
-
-
-
+#SearchButton{
+    margin-left:40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
