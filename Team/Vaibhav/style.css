@@ -50,8 +50,3 @@ body{
    background-color: black;
 }
 
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
