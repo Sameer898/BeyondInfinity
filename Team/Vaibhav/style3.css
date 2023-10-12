@@ -20,17 +20,23 @@ ul>li{
     font-weight: 10;
 }
 .logo{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     border-radius: 5px;
     position: fixed;
-    margin-top: 12px;
+    margin-top:0px;
+    margin-left: 40px;
 }
  
 a{
     color: black;
     border-radius: 10px;
     text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    width: 25px;
+    height: 20px;
 
 }
 .nav-elements{
@@ -40,4 +46,20 @@ a{
 }
 a:hover{
     box-shadow: 0px 5px 10px limegreen;
+    background-color: aliceblue;
+}
+
+#signup{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+#signup:hover{
+    box-shadow: 3px 3px 10px green;
+}
+#login{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+#login:hover{
+    box-shadow: 3px 3px 10px green;
 }
