@@ -13,11 +13,9 @@ body{
     text-align: center;
     margin-top: 20%;
 }
-.s{
-    border: 2px solid;
-    height: 30px;
-    width: 50px;
-    background-color: #19ffe3;
+.s{ height:auto;
+    width: auto;
+    background-color: #45B1E8;
 }
 .btns button{
     font-size:1.5rem;
