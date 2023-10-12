@@ -1,6 +1,6 @@
 .body{
-    background-color:#3056D3 ;
-    background-image: url(img/img2.avif);
+    /* background-color:#3056D3 ; */
+    background-image: url(./../Harshal/img/img2.avif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -44,8 +44,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", en
 .div5{
     text-align: center;
     display: flex;
-    gap: 10px;
-    margin-left: 30px;
+    gap: 15px;
+    margin-left: 40px;
 }
 .div3{
     text-align: center;
@@ -58,10 +58,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", en
     background-color: rgba(113, 113, 243, 0.705);
 }
 .hover{
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     margin-bottom: 10px;
-    border-radius: 25px;
+    border-radius: 155px;
 }
 .input{
     border-radius: 5px;
