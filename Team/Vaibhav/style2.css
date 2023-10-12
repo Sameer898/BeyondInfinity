@@ -39,7 +39,7 @@ button {
    justify-content: space-between;
 }
 
-button :hover{
+.btns button:hover{
     background-color: black;
     color: white;
 }
