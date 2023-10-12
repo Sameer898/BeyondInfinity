@@ -59,15 +59,24 @@ img{
 .h6{
     width: 300px;
      height: 29px;
-    margin-top: 243px;
-    margin-left: 476px;
+    margin-top: 0px;
+    margin-left: 40px;
     color: white;
 }
-.hr{
-    /* width: 4px;
-margin-top: 9px;
-margin-left: 2px;
-border: 1px;
-angle: -0.14 deg */
+
+.innerdiv2,.innerdiv3,.innerdiv{
+    display: flex;
+    gap: 30px;
+    margin-left: 500px;
+    margin-top: 40px;
+
+}
+.outerdiv,.outerdiv2,.outerdiv3{
+    display: flex;
+    width: 793px;
+    height: 88px;
+    margin-top: 80px;
+    margin-left: 130px;
+    border: 1px solid white;
 
 }

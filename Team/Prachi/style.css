@@ -1,0 +1,26 @@
+.menu-container {
+    width: 200px;
+    background-color:aliceblue;;
+    height: 100%;
+    position: fixed;
+}
+
+/* Style the menu items */
+.menu-item {
+    padding: 30px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    border: 5px;
+
+}
+
+/* Change background color on hover */
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
