@@ -8,35 +8,35 @@ export const Signup = () => {
     const {type}=useSelector((state)=>state.auth);
     const dispatch=useDispatch();
   return (
-    <div class="body">
+    <div className="body flex bg-sky-300 h-[700px] ">
     
     
-    <div class="div1" >
+    <div className="div1 flex mx-auto" >
         <div>
         <img src="img/logo.png" alt="logo"/>
         </div>
         <br/>
-        <div  class="div2">
-            <h1 class="h1">Sign In</h1>
-            <div class="div5">
+        <div  className="div2 mt-[140px] flex flex-col gap-[20px] ">
+            <h1 className="h1 font-extrabold text-[30px] ">Sign In</h1>
+            <div className="div5 flex gap-[25px] w-[80px] bg-blue-200 text-white pl-[9px] ">
                 <div>
-                    <button class="hover" onClick={()=>{
+                    <button className="hover" onClick={()=>{
                         dispatch(setType(true));
                     }} type="text"  placeholder="Patient">Patient</button>
                 </div>
                 <div>
-                    <button class="hover" onClick={()=>{
+                    <button className="hover gap-[25px] w-[100px] bg-sky-950 text-white pl-[9px]" onClick={()=>{
                         dispatch(setType(false));
                     }}  type="text"  placeholder="Caretaker">Caretaker</button>
                 </div>
             </div>
-            <p><input class="input" type="text" name="name" placeholder="Email" required/></p>
-            <p><input class="input" type="password" name="name" placeholder="password" required/></p>
-            <p><input class="input" type="text" name="name" placeholder="Mobile Number" required/></p>
-             <a  href="ForgotPassword">ForgotPassword?</a> 
+            <p><label>Email :</label><input className="ml-[50px] input bg-slate-300 rounded-lg px-[10px] " type="text" name="name" placeholder="Enter the email" required/></p>
+            <p><label>Password :</label><input className="ml-[20px] input bg-slate-300 rounded-lg px-[10px] " type="password" name="name" placeholder="Enter the password" required/></p>
+            <p><label>Confirm Password :</label><input className="ml-[10px] input bg-slate-300 rounded-lg px-[10px] " type="text" name="name" placeholder="Enter the confirm password" required/></p>
+             <a  href="ForgotPassword" className="text-blue-900 font-bold ">ForgotPassword?</a> 
             <br/>
-            <div class="div3">
-                <input class="hover" onClick={()=>navigate("/verifyEmail")} value="Sign In"/>
+            <div className="div3 ">
+                <input className="bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>navigate("/verifyEmail")} value="Sign In"/>
             </div>
             <br/>
             <br/>
