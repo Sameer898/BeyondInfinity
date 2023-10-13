@@ -3,6 +3,7 @@ import './Login.css'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
+import {toast} from "react-hot-toast"
 export const Login  = () => {
     const navigate=useNavigate();
     const {type}=useSelector((state)=>state.auth);
@@ -27,8 +28,10 @@ export const Login  = () => {
                 <div>
                     <input className="hover bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>{
                         if(type){
+                            toast.success("Successfully Login");
                             navigate("/myprofile");
                         }else{
+                            toast.success("Successfully Login");
                             navigate("/caregivier")
                         }
                     }}   value="Login"/>

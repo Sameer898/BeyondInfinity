@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { setType } from '../slices/authSlice';
 import { useState } from 'react';
+import {toast} from "react-hot-toast";
 export const Signup = () => {
     const navigate=useNavigate();
     const {type}=useSelector((state)=>state.auth);
@@ -44,7 +45,11 @@ export const Signup = () => {
              <a  href="ForgotPassword" className="text-blue-900 font-bold ">ForgotPassword?</a> 
             <br/>
             <div className="div3 ">
-                <input className="bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>navigate("/verifyEmail")} value="Sign Up"/>
+                <input className="bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>{
+                    toast.success("Successfully Signed Up");
+                    navigate("/verifyEmail");
+                }
+                } value="Sign Up"/>
             </div>
             <br/>
             <br/>

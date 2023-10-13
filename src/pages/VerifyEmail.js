@@ -2,6 +2,7 @@ import React from 'react'
 import "./VerifyEmail.css"
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useSelector } from 'react-redux';
+import {toast} from "react-hot-toast"
 export const VerifyEmail = () => {
     const navigate=useNavigate();
   return (
@@ -15,7 +16,7 @@ export const VerifyEmail = () => {
             <label for="OTP">OTP</label>
             <input type="text" className=" bg-zinc-500" placeholder="  Enter your otp" id="OTP"/><br/>
             <button className="bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>{
-                
+                toast.success("Successfully verified.")
                 navigate('/login');
             }} id="btn" action="#">SUBMIT</button>
         </div>
