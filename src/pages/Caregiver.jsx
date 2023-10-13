@@ -41,11 +41,12 @@ const navigate=useNavigate();
     </div>
 
     <div className="w-[1164px] h-[860px] top-[78px] left-[282px] bg-[#010B13]  gap-[10px] flex flex-col">
-        <div className="ml-[30px] w-[229px] h-[48px] top-[99px] text-white left-[352px] font-inter font-[700px] text-[40px] leading-[48px] ">Caregiver Profile</div>
-        <div className="ml-[30px] w-[404px] top-[169px] left-[352px] border-[1px] text-white "></div>
-
+       <div className="flex ">
+       <div className=" flex ml-[30px] w-[350px] h-[48px] top-[99px] text-white left-[352px] font-inter font-[700px] text-[40px] leading-[48px] ">Caregiver Profile</div>
+        
+       </div>
         <div className="flex mt-[30px] ">
-        <div className="ml-[30px] w-[80px] h-[65px] top-[207px] left-[356px] bg-[#D9D9D9] rounded-full"></div>
+        <img src="img/contact.jpeg" className="ml-[30px] w-[80px] h-[65px] top-[207px] left-[356px] bg-[#D9D9D9] rounded-full"></img>
         <div className="flex flex-col">
         <div className="ml-[30px] w-[157px] h-[29px] top-[214px] left-[476px] font-inter font-[400px] text-[24px] leading-[29px] text-white">Sameer Turke </div>
         <div className="ml-[30px] w-[300px] h-[29px] top-[243px] left-[476px] font-inter font-[400px] text-[24px] leading-[29px] text-[#808080]">beyondInfinity@gmail.com</div>

@@ -12,6 +12,7 @@ import { SearchPage } from './pages/SearchPage';
 import { Auth } from './pages/Auth';
 import { Setting } from './pages/Setting';
 import { Caregiver } from './pages/Caregiver';
+import { Blood } from './pages/Blood';
 function App() {
   return (
     <div>
@@ -26,6 +27,7 @@ function App() {
        <Route path="/authentication" element={<Auth/>}/>
        <Route path="/setting" element={<Setting/>}/>
        <Route path="/caregivier" element={<Caregiver/>}/>
+       <Route path="/blood" element={<Blood/>}/>
       </Routes>
     </div>
 
