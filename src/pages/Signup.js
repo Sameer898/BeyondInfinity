@@ -26,13 +26,13 @@ export const Signup = () => {
             <h1 className="h1 font-extrabold text-[30px] ">Sign Up</h1>
             <div className="div5 flex gap-[25px] w-[80px] text-white pl-[9px] ">
                 <div>
-                    <button className={`hover ${flag ? " bg-blue-300":"bg-sky-950"} `} onClick={()=>{
+                    <button className={`hover ${flag ? "bg-sky-950 ":"bg-blue-300"} `} onClick={()=>{
                         dispatch(setType(true));
                         handleFlag();
                     }} type="text"  placeholder="Patient">Patient</button>
                 </div>
                 <div>
-                    <button className={`hover gap-[25px] w-[100px] ${flag ? " bg-sky-950":"bg-blue-300"}  text-white pl-[9px]`} onClick={()=>{
+                    <button className={`hover gap-[25px] w-[100px] ${flag ? " bg-blue-300":"bg-sky-950"}  text-white pl-[9px]`} onClick={()=>{
                         dispatch(setType(false));
                         handleFlag();
                     }}  type="text"  placeholder="Caretaker">Caregiver</button>

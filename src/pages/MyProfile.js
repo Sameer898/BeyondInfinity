@@ -25,7 +25,7 @@ const navigate=useNavigate();
     <Navbar/>
       <div className="flex">
     <div className="w-[272px] h-[862px] bg-[#010B13] text-center py-[76px] px-[-10px] border-[1px] text-white ">
-        <div className=' "'><Link to={`${type?"/myprofile":"/caregivier"}`}>Profile</Link></div>
+        <div className=' "'><Link to={"/myprofile}"}>Profile</Link></div>
         <div className="w-[194px] text-center top-[94px] ml-[45px] ">--------------------</div>
         <div className="w-[194px] text-center top-[94px] ml-[45px] "></div>
         <div className='"'><Link to="/search">Search</Link></div>

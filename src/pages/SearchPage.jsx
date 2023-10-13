@@ -109,7 +109,12 @@ export const SearchPage = () => {
             </div>
             <div className='flex gap-[30px] mt-[10px] '>
             <button onClick={()=>handleConfirmation()} className="w-[116px] h-[50px] top-[1296px] text-black left-[946px] bg-[#50C878]">Request</button>
-            <button onClick={()=>navigate('/search')} className="w-[116px] h-[50px] top-[1296px] text-black left-[1108px] bg-[#ACE1AF]">Back</button>
+            <button onClick={()=>{
+                 handleFirstSearch();
+            navigate('/search');
+
+            }
+           } className="w-[116px] h-[50px] top-[1296px] text-black left-[1108px] bg-[#ACE1AF]">Back</button>
             </div>
                     
             </div>  
@@ -125,13 +130,22 @@ export const SearchPage = () => {
                     <div className='ml-[10px] w-[355px] h-[29px] top-[1424px] left-[544px] font-inter font-[400px] text-[24px] leading-[29px] text-[#808080]' >Hanuman nagar,Hingna,Nagpur</div>
             </div>
             <div className='flex gap-[30px] mt-[10px] '>
-            <button onClick={()=>handleConfirmation()} className="w-[116px] h-[50px] top-[1403px] text-black left-[946px] bg-[#50C878]">Request</button>
-            <button onClick={()=>navigate('/search')} className="w-[116px] h-[50px] top-[1403px] text-black left-[1108px] bg-[#ACE1AF]">Back</button>
+            <button onClick={()=>{
+                 handleFirstSearch();
+                 navigate('/search');
+            }}  className="w-[116px] h-[50px] top-[1403px] text-black left-[946px] bg-[#50C878]">Request</button>
+            <button onClick={()=>{
+                  handleFirstSearch();
+                 navigate('/search');
+            }} className="w-[116px] h-[50px] top-[1403px] text-black left-[1108px] bg-[#ACE1AF]">Back</button>
             </div>
             
                     
             </div>  
-            <button onClick={()=>navigate('/search')} className="ml-[30px] mt-[50px] w-[116px] h-[50px] top-[1548px] text-black left-[270px] bg-[#ACE1AF]">Back</button>
+            <button onClick={()=>{
+                 handleFirstSearch();
+                 navigate('/search');
+            }} className="ml-[30px] mt-[50px] w-[116px] h-[50px] top-[1548px] text-black left-[270px] bg-[#ACE1AF]">Back</button>
             
     </div>
     
