@@ -1,8 +1,12 @@
 import React from 'react'
 import './Signup.css'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { setType } from '../slices/authSlice';
 export const Signup = () => {
     const navigate=useNavigate();
+    const {type}=useSelector((state)=>state.auth);
+    const dispatch=useDispatch();
   return (
     <div class="body">
     
@@ -16,10 +20,14 @@ export const Signup = () => {
             <h1 class="h1">Sign In</h1>
             <div class="div5">
                 <div>
-                    <input class="hover"  type="text"  placeholder="Patient"/>
+                    <button class="hover" onClick={()=>{
+                        dispatch(setType(true));
+                    }} type="text"  placeholder="Patient">Patient</button>
                 </div>
                 <div>
-                    <input class="hover"  type="text"  placeholder="Caretaker"/> 
+                    <button class="hover" onClick={()=>{
+                        dispatch(setType(false));
+                    }}  type="text"  placeholder="Caretaker">Caretaker</button>
                 </div>
             </div>
             <p><input class="input" type="text" name="name" placeholder="Email" required/></p>

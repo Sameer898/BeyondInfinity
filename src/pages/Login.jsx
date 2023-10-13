@@ -1,8 +1,12 @@
 import React from 'react'
 import './Login.css'
 import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 export const Login  = () => {
     const navigate=useNavigate();
+    const {type}=useSelector((state)=>state.auth);
+    const dispatch=useDispatch();
   return (
     <div className="body">
     
@@ -21,7 +25,13 @@ export const Login  = () => {
             <br/>
             <div className="div3">
                 <div>
-                    <input className="hover" onClick={()=>navigate('/myprofile')}   value="Login"/>
+                    <input className="hover" onClick={()=>{
+                        if(type){
+                            navigate("/myprofile");
+                        }else{
+                            navigate("/caregivier")
+                        }
+                    }}   value="Login"/>
                 </div>
                 <br/>
                 <div>

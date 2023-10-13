@@ -3,12 +3,13 @@ import { Navbar } from './Navbar'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import {toast} from 'react-hot-toast'
+import { useSelector } from 'react-redux'
 export const SearchPage = () => {
     const [firstSearch,setFirstSearch]=useState(true);
     const [secondSearch,setSecondSearch]=useState(false);
     const [confirmation,setConfirmation]=useState(false);
     const navigate=useNavigate();
-
+    const {type}=useSelector((state)=>state.auth);
     const handleFirstSearch=()=>{
         setFirstSearch(true);
         setSecondSearch(false);
@@ -31,7 +32,7 @@ export const SearchPage = () => {
         firstSearch && 
         <div className='flex'>
     <div className="w-[272px] h-[862px] bg-[#010B13] text-center py-[76px] px-[-10px] border-[1px] text-white ">
-        <div className=' "'><Link to="/myprofile">Profile</Link></div>
+        <div className=' "'><Link to={`${type?"/myprofile":"/caregivier"}`}>Profile</Link></div>
         <div className="w-[194px] text-center top-[94px] ml-[45px] ">--------------------</div>
         <div className="w-[194px] text-center top-[94px] ml-[45px] "></div>
         <div className='"'><Link to="/search">Search</Link></div>
@@ -143,7 +144,7 @@ export const SearchPage = () => {
     }
     {
         confirmation && 
-        <div className='flex'>
+        <div className='flex bg-[#010B13]  '>
     <div className="w-[272px] h-[862px] bg-[#010B13] text-center py-[76px] px-[-10px] border-[1px] text-white ">
         <div className=' "'><Link to="/myprofile">Profile</Link></div>
         <div className="w-[194px] text-center top-[94px] ml-[45px] ">--------------------</div>
@@ -154,12 +155,13 @@ export const SearchPage = () => {
         <div className="w-[194px] text-center mt-[200px] ml-[45px] text-center ">--------------------</div>
        <Link to="/setting" className="">Setting</Link>
     </div>
-        <div className="w-[639px] h-[348px] mx-auto border-[1px] bg-[#010B13] text-white">
+        <div className="w-[639px] mt-[50px] h-[348px] mx-auto border-[1px] bg-[#010B13] text-white">
                 <div className='text-[40px] rounded-3xl '>Are you sure you want to send Request</div>
                 <div className="flex">
                 <button onClick={()=>{
                     handleConfirmation();
                     toast.success("Successfully request sent.");
+                    navigate("/search");
                 }} className="ml-[30px] mt-[50px] w-[116px] h-[50px] top-[1548px] text-black left-[270px] bg-[#ACE1AF]">Request</button>
                 <button onClick={()=>{
                     handleFirstSearch();

@@ -18,7 +18,7 @@ export const Navbar = () => {
         <div className="ml-[600px] gap-[10px] ">
         <button onClick={()=>navigate("/")} className="mr-[10px] ">Log out</button>
         
-        <button onClick={()=>navigate("/signup")}>Sign Up</button>
+       
 
         </div>
       

@@ -9,6 +9,9 @@ import { Signup } from './pages/Signup';
 import { VerifyEmail } from './pages/VerifyEmail';
 import { MyProfile } from './pages/MyProfile';
 import { SearchPage } from './pages/SearchPage';
+import { Auth } from './pages/Auth';
+import { Setting } from './pages/Setting';
+import { Caregiver } from './pages/Caregiver';
 function App() {
   return (
     <div>
@@ -20,6 +23,9 @@ function App() {
         <Route path="/verifyEmail" element={<VerifyEmail/>}/>
        <Route path="/myprofile" element={<MyProfile/>}/>
        <Route path="/search" element={<SearchPage/>}/>
+       <Route path="/authentication" element={<Auth/>}/>
+       <Route path="/setting" element={<Setting/>}/>
+       <Route path="/caregivier" element={<Caregiver/>}/>
       </Routes>
     </div>
 

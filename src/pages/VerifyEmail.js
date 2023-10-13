@@ -1,6 +1,7 @@
 import React from 'react'
 import "./VerifyEmail.css"
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useSelector } from 'react-redux';
 export const VerifyEmail = () => {
     const navigate=useNavigate();
   return (
@@ -12,7 +13,10 @@ export const VerifyEmail = () => {
         <div class="header"><h4>VERIFY OTP</h4></div>
             <label for="OTP">OTP</label>
             <input type="text" id="OTP"/><br/>
-            <button onClick={()=>navigate('/login')} id="btn" action="#">SUBMIT</button>
+            <button onClick={()=>{
+                
+                navigate('/login');
+            }} id="btn" action="#">SUBMIT</button>
         </div>
         </div>
     </div>
