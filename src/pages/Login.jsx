@@ -8,7 +8,7 @@ export const Login  = () => {
     const {type}=useSelector((state)=>state.auth);
     const dispatch=useDispatch();
   return (
-    <div className="body flex bg-sky-300 h-[700px]">
+    <div className="body flex bg-sky-300 h-[700px] py-[60px] ">
     
     
     <div className="div1 flex mx-auto" >
@@ -18,14 +18,14 @@ export const Login  = () => {
         <br/>
         <div  className="div2 mt-[140px] flex flex-col gap-[20px]">
             <h1 className="h1 font-extrabold text-[30px]">Login</h1>
-            <p><input className="input" type="text" name="name" placeholder="Email" required/></p>
-            <p><input className="input" type="password" name="name" placeholder="password" required/></p>
-            <a  href="ForgotPassword">ForgotPassword?</a>
+            <p><label>Email :</label><input className="ml-[50px] input bg-slate-300 rounded-lg px-[10px] " type="text" name="name" placeholder="Enter the email" required/></p>
+            <p><label>Password :</label><input className="ml-[20px] input bg-slate-300 rounded-lg px-[10px] " type="password" name="name" placeholder="Enter the password" required/></p>
+            <a  href="ForgotPassword text-blue-900 font-bold">ForgotPassword?</a>
             <br/>
             <br/>
-            <div className="div3">
+            <div className="div3 flex gap-[10px] ">
                 <div>
-                    <input className="hover" onClick={()=>{
+                    <input className="hover bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>{
                         if(type){
                             navigate("/myprofile");
                         }else{
@@ -35,7 +35,7 @@ export const Login  = () => {
                 </div>
                 <br/>
                 <div>
-                    <input className="hover" onClick={()=>navigate("/signup")} value="Signup"/>
+                    <input className="hover bg-green-600 w-[100px] px-[15px] rounded-lg" onClick={()=>navigate("/signup")} value="Signup"/>
                 </div>
             </div>
             <br/>
