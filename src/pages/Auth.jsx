@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 export const Auth = () => {
     const navigate=useNavigate();
-    const {type}=useSelector();
+    const {type}=useSelector((state)=>(state).auth);
   return (
     <div>
         <Navbar/>
