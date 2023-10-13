@@ -1,7 +1,10 @@
 import React from 'react'
-
+import {toast} from "react-hot-toast";
+import { useNavigate } from 'react-router-dom'; 
+import { useState } from 'react';
 export const Blood = () => {
-
+    const [flag,setFlag]=useState(true);
+    const navigate =useNavigate();
   return (
     <div className='relative'>
          
@@ -112,16 +115,93 @@ export const Blood = () => {
     
     </div>
 
-    <div className='w-full h-[700px] bg-[#3056D3]'>
 
-<div className='w-[200px] text-white h-[100px] py-[150px] px-[73px] text-[55px] '>
+        {
+            flag && 
+            <div className='w-full h-[700px] bg-[#3056D3]'>
+
+<div className='w-[700px] text-white h-[100px] py-[150px] px-[73px] text-[47px] '>
 Find Blood Provider
 </div>
+<div className='flex'>
+<div className='px-[100px] -py-[180px] w-[400px] h-[25px] text-[20px] text-white '>
+Blood Group
+</div>
+<input placeholder="  Enter the blood group"></input>
+
+</div>
+<div className='flex '>
+<div className='px-[100px] mt-[20px] -py-[150px] w-[400px] h-[25px] text-[20px] text-white '>
+Quantity
+</div>
+<input className='mt-[20px]' placeholder="  Enter the quantity"></input>
+
+</div>
+
+<div className='flex '>
+<div className='px-[100px] mt-[20px] -py-[150px] w-[400px] h-[25px] text-[20px] text-white '>
+State
+</div>
+<input className='mt-[20px]' placeholder="  Enter the State"></input>
+
+</div>
+
+<div className='flex '>
+<div className='px-[100px] mt-[20px] -py-[150px] w-[400px] h-[25px] text-[20px] text-white '>
+District
+</div>
+<input className='mt-[20px]' placeholder="  Enter the district"></input>
+
+</div>
+
+<div className='flex '>
+<div className='px-[100px] mt-[20px] -py-[150px] w-[400px] h-[25px] text-[20px] text-white '>
+City
+</div>
+<input className='mt-[20px]' placeholder="  Enter the City"></input>
+
+</div>
+
+<button onClick={()=>{
+    setFlag(false);
+}} className=' ml-[100px] mt-[50px] w-[198px] h-[40px] rounded-[2px] bg-[#21F8DE] text-black'>Check Avialability</button>
+
+
+</div>
+        }
+
+        {
+            !flag && 
+            <div className='w-full h-[700px] bg-[#3056D3]'>
+
+<div className='w-[700px] text-white h-[100px] py-[150px] px-[73px] text-[47px] '>
+Congratulations ,<br/> Blood is Available.
+</div>
+<div className='flex'>
+            <img src="https://th.bing.com/th/id/OIP.SzixlF6Io24jCN67HHZulAHaLH?w=143&h=215&c=7&r=0&o=5&dpr=1.4&pid=1.7" className="w-[190px] h-[190px] rounded-xl ml-[67px] ">
+
+            </img>
+            <img src="https://th.bing.com/th/id/OIP.Q_vZZcSYOaPMcxnXMQQ99QHaE8?w=296&h=197&c=7&r=0&o=5&dpr=1.4&pid=1.7" className="w-[190px] h-[190px] rounded-xl ml-[67px] "></img>
+            <img src="https://th.bing.com/th/id/OIP.-d8GY5axNJZYoXsNOUJ4iwAAAA?w=189&h=189&c=7&r=0&o=5&dpr=1.4&pid=1.7" className="w-[190px] h-[190px] rounded-xl ml-[67px] "></img>
+            <img src="https://th.bing.com/th/id/OIP.X9gYA6VDsnaSpMqBOWKH5wHaGv?w=223&h=203&c=7&r=0&o=5&dpr=1.4&pid=1.7" className="w-[190px] h-[190px] rounded-xl ml-[67px] "></img>
+</div>
+<div className='ml-[80px] mt-[10px] w-[700px] text-white h-[100px]  text-[15px]'>4 Volunteers available to fulfill the blood requirement</div>
+<button onClick={()=>{
+    toast.success("Payment Successful");
+    navigate("/");
+    
+}} className=' ml-[100px] mt-[50px] w-[198px] h-[40px] rounded-[2px] bg-[#21F8DE] text-black'>Proceed to Pay</button>
+
+
+</div>
+            
+           
+        }
+   
 
 </div>
 
 
-   
-    </div>
+  
   )
 }
